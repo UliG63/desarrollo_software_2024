@@ -1,0 +1,139 @@
+.instituciones-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.instituciones-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre tarjetas */
+    margin-top: 20px;
+    width: 80%;
+}
+
+.institucion-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px 30px 10px;
+    width: 45%; /* Ajuste para que quepan dos tarjetas por fila */
+    max-width: 500px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.institucion-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.institucion-card h6 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #555;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+.institucion-info {
+    padding: 15px 0;
+}
+
+.institucion-info p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #666;
+}
+
+.edit-button,
+.save-button,
+.cancel-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.edit-button {
+    background-color: white;
+    color: #7f4e2b;
+    border-color: #7f4e2b;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.save-button {
+    background-color: #5cb85c;
+    border: none;
+    color: #f9f7f4;
+    border-radius: 5px;
+}
+
+.cancel-button {
+    background-color: #d9534f;
+    border: none;
+    color: #f9f7f4;
+    border-radius: 5px;
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 7px;
+    margin-left: 10px;
+    transition: transform 0.2s ease;
+}
+
+.delete-button img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s ease;
+}
+
+.delete-button img:hover {
+    transform: scale(1.2); /* Aumento suave del tamaño de la imagen */
+}
+
+
+.edit-button:hover {
+    background-color: #7f4e2b;
+    color: white;
+}
+
+.save-button:hover {
+    background-color: #4cae4c;
+}
+
+.cancel-button:hover,
+.logout-button:hover {
+    background-color: #c9302c;
+}
+
+.institucion-card input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .instituciones-container {
+        width: 90%;
+    }
+    
+    .institucion-card {
+        width: 100%;
+    }
+}

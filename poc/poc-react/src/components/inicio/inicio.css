@@ -1,0 +1,46 @@
+.inicio {
+    width: 100%;
+    background-size: cover;
+    color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .full-height {
+    min-height: 80vh; 
+  }
+  
+  .partial-height {
+    min-height: 40vh; 
+  }
+  
+  .inicio-text {
+    text-align: center;
+    width: 75%;
+  }
+  
+  .inicio-text h1 {
+    font-size: 40px;
+  }
+  
+  .inicio-text p {
+    margin: 10px;
+    line-height: 1.4;
+  }
+  
+  @media (max-width: 840px) {
+    .inicio-text {
+      width: 95%;
+    }
+  
+    .inicio-text h1 {
+      font-size: 30px;
+      margin-top: 60px;
+    }
+
+    .inicio-text p {
+      font-size: 14px;
+    }
+
+  }

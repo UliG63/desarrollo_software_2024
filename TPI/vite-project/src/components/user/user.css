@@ -1,0 +1,157 @@
+.user-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.user-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.user-card h6 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #555;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+.personal-info, .user-varita {
+    padding: 15px 0;
+}
+
+.personal-info p, .user-varita p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #666;
+}
+
+  .red-buttons {
+    display: flex;
+    justify-content: center; /* Centra los botones */
+    gap: 10px; /* Establece el espacio de 10px entre los botones */
+    align-items: center; /* Alinea los botones verticalmente en el centro */
+}
+
+.delete-user {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Hace que los botones estén en línea */
+}
+
+.delete-user:hover {
+    background-color: #c9302c;
+}
+
+.edit-button,
+.save-button,
+.cancel-button,
+.logout-button
+ {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.edit-button {
+    background-color: white;
+    color: #7f4e2b;
+    border-color: #7f4e2b;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.save-button {
+    background-color: #5cb85c;
+    border: none;
+    color: #f9f7f4;
+    border-radius: 5px;
+}
+
+.cancel-button {
+    background-color: #d9534f;
+    border: none;
+    color: #f9f7f4;
+    border-radius: 5px;
+}
+
+.logout-button {
+    background-color: white;
+    color: #d9534f;
+    border-color: #d9534f;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.logout-button:hover{
+    background-color: #d9534f;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #7f4e2b;
+    color: white;
+}
+
+.save-button:hover {
+    background-color: #4cae4c;
+}
+
+.cancel-button:hover {
+    background-color: #c9302c;
+}
+
+.user-card input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    .user-card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .user-card h3 {
+        font-size: 20px;
+    }
+
+    .user-card h6 {
+        font-size: 16px;
+    }
+
+    .personal-info p, .user-varita p {
+        font-size: 16px;
+    }
+}
